@@ -89,4 +89,4 @@ $ git clone -b develop_Realm <https://github.com/jphong1005/Todoey.git>
     - 플랫폼 자체가 데이터베이스 서버의 역할과 같이 완전히 **분리된 데이터베이스** ex) SQLite, Oracle SQL, Realm 등
     - **NoSQL 기반 DB**로 엔티티 간의 Join을 통한 Relation은 불가능하지만, `LinkingObjects (레퍼런스 또는 링크)`를 통해 엔티티의 역참조 관계를 가져갈 수 있다.
     - 어트리뷰트 정의 시 사용되었던 `@objc dynamic (= Dynamic Dispatch)`키워드의 이해 (Realm 공식 트위터를 통해 현재는 [`@Persisted`](https://twitter.com/realm/status/1414633070683115527)로 대체)
-      - **Transaction에 의해 Realm DB의 데이터 모델이 변경되는 과정은 [`Objective-C의 런타임 시점에 결정`](https://academy.realm.io/posts/mobilization-roy-marmelstein-objective-c-runtime-swift-dynamic/)이되고 Objective-C는 동적 디스패치 (= Dynamic Dispatch)를 사용하기 언어이기 때문**
+      - **Transaction에 의해 Realm DB의 데이터 모델이 변경되는 과정은 [`Objective-C의 런타임 시점에 결정`](https://academy.realm.io/posts/mobilization-roy-marmelstein-objective-c-runtime-swift-dynamic/)이되고 Objective-C는 동적 디스패치 (= Dynamic Dispatch)를 사용하는 언어이기 때문**
